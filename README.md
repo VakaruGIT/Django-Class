@@ -10,3 +10,5 @@ password : admin
 username : TestBot
 password : TestPassword1
 
+# The django version is 
+- 4.2.11
