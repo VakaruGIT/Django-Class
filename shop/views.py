@@ -16,19 +16,11 @@ def register(request):
 
 def home(request):
 
-    # products = [{"name": "Vanilla", "price": 5.00},
-    #            {"name": "Strawberry", "price": 6.00},
-    #             {"name": "Chocolate", "price": 7.00},
-    #             {"name": "Mint", "price": 8.00},
-    #             {"name": "Pistachio", "price": 9.00},
-    #             {"name": "Lemon", "price": 10.00},
-    #             {"name": "Tiramisu", "price": 11.00},
-    #             {"name": "Peach", "price": 12.00}]
 
     products = Product.objects.all()
 
-    contextdata = {"sitename": "My IMC ice cream shop",
-                   "slogan": "Where ice cream tastes like Italy",
+    contextdata = {"sitename": "My IMC Ice Cream Shop",
+                   "slogan": "Ice Cream from Italy!",
                    "products": products,}
 
     if request.method == "POST":
